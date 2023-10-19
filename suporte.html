@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="suporte.css">
+    <title>América Instal</title>
+    <link rel="icon" type="image" href="img/logo jpg.png">
+</head>
+<body>
+    <img src="img/logo png.png" width="190px">
+    
+<nav>
+        <a href="index.html">Retornar para setup</a>
+         
+    </nav>
+<article>
+    <div>
+        <h1>Suporte</h1>
+        <form id="formulario">
+            <input type="text" id="nome" placeholder="Nome">
+            <br><br>
+            <input type="email" id="email" placeholder="Email">
+            <br><br>
+            <input type="tel" id="fone" placeholder="Fone">
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+            var fone = document.getElementById("fone").value;
+
+            
+            if (nome === "" || email === "" || fone === "") {
+                alert("Por favor, preencha todos os campos.");
+            } else {
+                alert("Formulário enviado com sucesso!");
+               
+        });
+    </script>
+</article>
+</body>
+</html>
